@@ -1,0 +1,3 @@
+sqoop import --connect jdbc:teradata://cdwdcop1/DATABASE=ksankaran_edw_ctl_tab \
+--username u189404 -P --table td_sqoop_test -m 1 \
+--split-by ctrl_m_job_nm --target-dir /user/sqoop_test/ --append
